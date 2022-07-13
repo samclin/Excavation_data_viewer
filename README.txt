@@ -6,6 +6,8 @@ The archaeological data must have the following structure:
 - In both tables, there must be two fields: 'Unit' and 'ID'
 - In the 'Context' table, there also must be two additional fields: 'level' and 'code'
 
+As an example, the 'SDG2_sample_data.mdb' is a dataset available to download and use with the app. The dataset is sampled from the site database for Trench 3 at Shuidonggou Locality 2 (see Peng et al. 2017, 2018; Zhang et al. 2020). 
+
 To use the app, you need to:
 1. Open the console for R 32-bit (the R.exe or RGui.exe is usually located in C:\Program Files\R\R-version\bin\i386\). Note that the 32-bit version is no longer provided by R version 4.2.0 or higher. Please install an older version of R to get the 32-bit version.
 2. In the R console, use the 'install.packages()' function to install the following packages:
@@ -27,3 +29,8 @@ To use the app, you need to:
 10. Use the 'Colour pallete' slide bar to adjust the colour pallete used to colour code the points.
 11. Use the 'Colour by' drop-down menu to change how the points are coloured (by Unit, Level or Code).
 12. To download a screen shot of the 3D plot, use the 'Download plot as a png' function button on the top-right of the 3D plot (above the legend).
+
+Reference:
+Peng, F., Lin, S. C., Guo, J., Wang, H., & Gao, X. (2017). The application of SfM photogrammetry software for extracting artifact provenience from palaeolithic excavation surfaces. Journal of Field Archaeology, 42(4), 326-336.
+Peng, F., Guo, J., Lin, S., Wang, H., & Gao, X. (2018). The onset of Late Paleolithic in North China: An integrative review of the Shuidonggou site complex, China. L'Anthropologie, 122(1), 74-86.
+Zhang, P., Zhang, X., Lin, S., Guo, J., Wang, H., Zwyns, N., Peng, F., Gao, X. (2020). A preliminary analysis of the stone artifacts from the 2014~ 2015 excavation of Shuidonggou Locality 2, Ningxia Autonomous Region. Acta Anthropologica Sinica, 39(01), 30.
