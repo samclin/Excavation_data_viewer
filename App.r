@@ -7,9 +7,6 @@ library(dplyr)
 library(RColorBrewer)
 library(shinyFiles)
 
-#odbcListDrivers
-
-
 # Define UI ----
 ui <- fluidPage(
   
@@ -19,9 +16,12 @@ ui <- fluidPage(
   
   fluidRow (
 	column (1,
-		shinyFilesButton("file", label="File select", title="Please select a file", FALSE),
+		#shinyFilesButton("file", label="Select file", title="Please select a file", FALSE),
 		
-		actionButton("set_file", label="Load file"),
+		fileInput('file', 'Choose mdb',multiple = TRUE,
+		          accept=c('.mdb')),
+		
+		#actionButton("set_file", label="Load file"),
 		
 		sliderInput (inputId="Point_size",
                    label="Point size",
@@ -84,17 +84,20 @@ server <- function(input, output) {
 
 	})
 
-	options(shiny.maxRequestSize=30*1024^2)
+	#options(shiny.maxRequestSize=30*1024^2)
 	
-	shinyFileChoose(input,'file', roots=getVolumes()())
+	#shinyFileChoose(input,'file', roots=getVolumes()())
+	
 	
 
-		observeEvent (input$set_file, {
+		observeEvent (input$file, {
 		
-			filepaths <- ( parseFilePaths(roots=getVolumes()(), input$file))
-			db <- as.vector(as.character(filepaths$datapath))
+			#filepaths <- ( parseFilePaths(roots=getVolumes()(), input$file))
+			#db <- as.vector(as.character(filepaths$datapath))
 			#output$mytext <- renderPrint({db})
-			
+		  inFile <- input$file
+			db <- inFile$datapath
+		  
 			con <- odbcConnectAccess(db)
 			context <- sqlFetch(con, "Context")
 			xyz <- sqlFetch(con, "xyz")
