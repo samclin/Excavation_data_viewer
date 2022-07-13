@@ -18,7 +18,7 @@ ui <- fluidPage(
 	column (1,
 		#shinyFilesButton("file", label="Select file", title="Please select a file", FALSE),
 		
-		fileInput('file', 'Choose mdb',multiple = TRUE,
+		fileInput('file', 'Select mdb',multiple = TRUE,
 		          accept=c('.mdb')),
 		
 		#actionButton("set_file", label="Load file"),
