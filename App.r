@@ -110,7 +110,7 @@ server <- function(input, output) {
 			
 			output$Unit <- renderUI({checkboxGroupInput(inputId = "Unit", label = "Unit", choices = unit_list, selected = unit_list)})
 			output$Level <- renderUI({checkboxGroupInput(inputId = "Level", label = "Level", choices = level_list, selected = level_list)})
-			output$Code <- renderUI({checkboxGroupInput(inputId = "Code", label = "Code", choices = code_list, selected=code_list)})
+			output$Code <- renderUI({checkboxGroupInput(inputId = "Code", label = "Code", choices = code_list, selected=c(Lithic))})
 		
 					
 			to_plot <- reactive({
