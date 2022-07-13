@@ -6,7 +6,7 @@ The archaeological data must have the following structure:
 - In both tables, there must be two fields: 'Unit' and 'ID'
 - In the 'Context' table, there also must be two additional fields: 'level' and 'code'
 
-As an example, the 'SDG2_sample_data.mdb' is a dataset available to download and use with the app. The dataset is sampled from the site database of Trench 3 at Shuidonggou Locality 2 (see Peng et al. 2017, 2018; Zhang et al. 2020). 
+The 'SDG2_sample_data.mdb' is available to download as an example to use with the app. The dataset is sampled from the site database of Trench 3 at Shuidonggou Locality 2 (see Peng et al. 2017, 2018; Zhang et al. 2020). 
 
 To use the app, you need to:
 1. Open the console for R 32-bit (the R.exe or RGui.exe is usually located in C:\Program Files\R\R-version\bin\i386\). Note that the 32-bit version is no longer provided by R version 4.2.0 or higher. Please install an older version of R to get the 32-bit version.
