@@ -7,7 +7,7 @@ The archaeological data must have the following structure:
 - In the 'Context' table, there also must be two additional fields: 'level' and 'code'
 
 To use the app, you need to:
-1. Open the console for R 32-bit (the R.exe is usually located in C:\Program Files\R\R-version\bin\i386\). Note that the 32-bit version is no longer provided by R version 4.2.0 or higher. Please install an older version of R to get the 32-bit version.
+1. Open the console for R 32-bit (the R.exe or RGui.exe is usually located in C:\Program Files\R\R-version\bin\i386\). Note that the 32-bit version is no longer provided by R version 4.2.0 or higher. Please install an older version of R to get the 32-bit version.
 2. In the R console, use the 'install.packages()' function to install the following packages:
 	- shiny
 	- RODBC
