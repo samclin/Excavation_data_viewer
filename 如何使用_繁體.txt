@@ -6,6 +6,8 @@
 - 'Context'和'xyz'兩個表格裡都必須有兩個分別名為'Unit'和'ID'的字段(field)
 - 'Context'表格裡必須還有兩個分別名為'level'和'code'的字段(field)
 
+這裡提供'SDG2_sample_data.mdb'為範例數據庫下載使用. 此數據庫是采样自寧夏水洞溝二號點Trench3考古發掘數據. 關於水洞溝二號點Trench3的發掘報告,請參閱Peng et al. (2017, 2018)及張佩琪等(2020). 
+
 要使用這個app需要:
 1. 打開R(32-bit)的使用介面(R.exe或RGui.exe;兩個執行檔通常是在C:\Program Files\R\R-version\bin\i386\). 注意R 4.2.0和更新版本不再提共32-bit. 請安裝R 4.1.3或更早的版本並選擇安裝32-bit. 還有, RStudio以不支持執行R 32-bit. 所以必須以R.exe或RGui.exe來執行R 32-bit. 
 2. 在R介面裡, 用'install.packages()'程序來安裝以下的程序包:
@@ -26,3 +28,8 @@
 9. 用'Colour pallete'滑動條來改變控制圖顏色的調色板.
 10. 用'Colour by'選單來選擇數據顯示顏色是以Unit,Level還是Code來定.
 11. 如要下載截圖, 請用右上方'Download plot as a png'的功能鍵來下載.
+
+引用文獻:
+Peng, F., Lin, S. C., Guo, J., Wang, H., & Gao, X. (2017). The application of SfM photogrammetry software for extracting artifact provenience from palaeolithic excavation surfaces. Journal of Field Archaeology, 42(4), 326-336.
+Peng, F., Guo, J., Lin, S., Wang, H., & Gao, X. (2018). The onset of Late Paleolithic in North China: An integrative review of the Shuidonggou site complex, China. L'Anthropologie, 122(1), 74-86.
+张佩琪, 张晓凌, Sam Lin, 郭家龙, 王惠民, Nicolas Zwyns, 彭菲, 高星. 水洞沟第2地点2014-2015年出土石制品初步研究. 人类学学报, 39(01), 30-41.
