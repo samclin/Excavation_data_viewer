@@ -19,7 +19,7 @@
 	- dplyr
 	- RColorBrewer
 	- shingFiles
-3. 在R介面里执行 shiny::runGitHub('Excavation_data_viewer', 'samclin')
+3. 在R介面里执行 shiny::runGitHub(repo='Excavation_data_viewer', username='samclin', ref='main')
 4. 网路浏览器会开启并打开app的使用介面.
 5. 点选左上方的'Browse'按键打开浏览视窗. 浏览并点选想要检视的考古数据库(.mdb), 点击Open. 稍等一下让数据库上传.
 6. 数据库上传成功后, 使用介面左边有显示一系列可以点选的方块. 这些方块对应着数据库里'Unit','Level'和'Code'字段中不同的数据值. 视窗中间会出现一个三维图并显示数据库里的考古数据分布. 初始的默认选项是只显示石器(Lithic). 按住滑鼠左键选转图表. 按住滑鼠右键移动图表. 在三维图上移动滑鼠指标可以互动性的检视各个点的相关讯息. 
