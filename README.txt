@@ -22,7 +22,7 @@ To use the app, you need to:
 3. Run the following code in the R console- shiny::runGitHub(repo='Excavation_data_viewer', username='samclin', ref='main')
 4. Your internet browser should open up to a page that displays the app user interface.
 5. Click the 'Browse' button on the top-left. In the prompt window, navigate to select your site database (.mdb). Wait for a few seconds for the file to upload.
-6. After a few seconds, you should see a series of boxes show up on the left side of the window. These boxes corresponds to the different values for 'Unit', 'Level' and 'Code' within your database. You should also see an interactive 3D plot in the middle of the window displaying all of the recorded points. 
+6. After a few seconds, you should see a series of boxes show up on the left side of the window. These boxes corresponds to the different values for 'Unit', 'level' and 'code' within your database. You should also see an interactive 3D plot in the middle of the window displaying all of the recorded points. 
 7. Tick/untick any boxes will automatically update the 3D plot.
 8. By placing the mouse cursor on any of the points in the 3D plot, you will see some information of that particular point, including its Unit/ID as well as code and level.
 9. You can change the size and opacity of the points in the 3D plot by using the 'Point size' and 'Opacity' slide bars to the left of the screen.
