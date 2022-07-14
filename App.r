@@ -72,6 +72,8 @@ ui <- fluidPage(
 
 # Define server logic ----
 server <- function(input, output) {
+	
+	options(shiny.maxRequestSize=30*1024^2)
 
 	my_pal <- reactive ({
 		
